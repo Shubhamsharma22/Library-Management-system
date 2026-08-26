@@ -19,7 +19,7 @@ let newbook = {
   publishYear
 }
 setLoading(true)
-axios.post('http://localhost:3000/books',newbook)
+axios.post('https://library-management-system-ispu.onrender.com/books',newbook)
 .then((response)=>{
   setLoading(false)
   navigate("/")

@@ -14,7 +14,7 @@ const {id} = useParams()
 
   useEffect(()=>{
   setLoading(true)
-  axios.get(`http://localhost:3000/books/${id}`)
+  axios.get(`https://library-management-system-ispu.onrender.com/books/${id}`)
   .then((response)=>{
     setAuthor(response.data.author)
     setTitle(response.data.title)

@@ -10,7 +10,7 @@ const Deletebooks = () => {
   const { id } = useParams();
 
   function handleDeleteBook(){
-    axios.delete(`http://localhost:3000/books/${id}`)
+    axios.delete(`https://library-management-system-ispu.onrender.com/books/${id}`)
     .then((response)=>{
       console.log(response)
     })

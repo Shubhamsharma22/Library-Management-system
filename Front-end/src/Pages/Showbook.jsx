@@ -14,7 +14,7 @@ const Showbook = () => {
   useEffect(()=>{
     setLoading(true)
     async function fetchpost(){
-      axios.get(`http://localhost:3000/books/${id}`)
+      axios.get(`https://library-management-system-ispu.onrender.com/books/${id}`)
       .then((response)=>{
         console.log(response)
         setBook(response.data)
