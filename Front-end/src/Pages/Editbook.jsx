@@ -35,7 +35,7 @@ let newbook = {
   publishYear
 }
 setLoading(true)
-axios.put(`http://localhost:3000/books/${id}`,newbook)
+axios.put(`https://library-management-system-ispu.onrender.com/books/${id}`,newbook)
 .then((response)=>{
   setLoading(false)
   navigate("/")
